@@ -13,11 +13,34 @@ body{
     height : 100%;
     
     flex:1;
+    transition: flex 2s ease-out;  
 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;    
+    background-size: cover; 
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    
 }
+.panneau:hover{
+    flex:5
+}
+
+.messagePanneau{
+    color: white;
+    opacity: 0%;
+    transition: 2s;
+    transform: translateY(1500%);
+   
+}
+
+.panneau:hover>.messagePanneau{
+    opacity: 100%;
+    transform: translateY(0%);
+
+}
+
 
 .paysage1{
     background-image:url('images/paysage1.jpg')
@@ -38,3 +61,4 @@ body{
 .paysage5{
     background-image:url('images/paysage5.jpg')
 }
+
